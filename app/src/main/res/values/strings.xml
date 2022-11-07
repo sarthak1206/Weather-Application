@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">WeatherAppAssignment</string>
+
+    <!--activity_splash.xml-->
+    <string name="splashicon">SplashIcon</string>
+    <string name="header_image">Header Image</string>
+
+    <!-- Indexes of Navigation Viewer -->
+    <string name="five_day_weather">5-Day Weather</string>
+    <string name="hourly_weather">Premium</string>
+    <string name="moon_phase">Moon Phase</string>
+    <string name="ten_day_forecast">10-Day Forecast</string>
+    <string name="my_cities">My Cities</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+
+    <!--MainActivity.java-->
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="share_using">Share using</string>
+    <string name="loading">Loading</string>
+    <string name="temperature">Temperature</string>
+
+    <!--fragment_settings.xml-->
+    <string name="twelve">12</string>
+    <string name="twenty_four">24</string>
+    <string name="fahrenheit">F</string>
+    <string name="celsius">C</string>
+    <string name="time_format">Time Format</string>
+    <string name="date_format">Date Format</string>
+    <string name="system">MMM-DD</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="pressure">Pressure</string>
+    <string name="kmh">km/h</string>
+    <string name="mh">m/s</string>
+    <string name="hectopascals">Hectopascal</string>
+    <string name="precipitation">Precipitation</string>
+    <string name="mbar">mbar</string>
+    <string name="api">YYYY-MM-DD</string>
+    <string name="mm">mm</string>
+    <string name="inches">Inches</string>
+
+    <!-- fragment_my_cities.xml -->
+    <string name="two_by_ten">(2/10)</string>
+    <string name="nothing_to_display">Nothing to display yet</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="clear">Clear</string>
+    <string name="enter_your_location_here">Enter your location here</string>
+
+    <string name="ad_unit">ca-app-pub-5493516980230071/5243743386</string>
+    <string name="test_unit">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_id">ca-app-pub-5493516980230071~3645906477</string>
+
+
+
+    <string name="nav_premium">Premium</string>
+    <string name="google_play">Google Play</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="premium_price">₹70.00</string>
+    <string name="pay">Pay</string>
+    <string name="google_play_balance">Google Play Balance: ₹140.00</string>
+    <string name="terms">By tapping \'BUY\', you accept the following terms of service. Terms of service-Android(India),Privacy Notice.</string>
+    <string name="buy">BUY</string>
+
+    <string-array name="nav_item_activity_titles">
+        <item>5-Day Weather</item>
+        <item>Hourly Weather</item>
+        <item>10-Day Forecast</item>
+        <item>Moon Phase</item>
+        <item>My Cities</item>
+        <item>Settings</item>
+        <item>About</item>
+    </string-array>
+</resources>

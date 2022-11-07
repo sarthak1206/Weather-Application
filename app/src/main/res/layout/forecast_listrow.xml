@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/four"
+    android:background="@color/lightGrey">
+
+    <LinearLayout
+        android:id="@+id/date_and_day"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_sixteen"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="THU"
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_sixteen"
+            android:textColor="@color/hint_dark"
+            android:text="Dec 11"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/desc_holder"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="25dp"
+        android:gravity="center_vertical"
+        app:layout_constraintWidth_percent="0.36"
+        android:layout_marginVertical="20dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/minMaxTempTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30/22 C"
+            android:textSize="21sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/descTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chance of Thunderstorm"
+            android:textSize="19sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/preciptTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precip.: 3.10 mm"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/humidityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Humidity: 98/60%"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/windTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wind: 18m/s E"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/pressureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pressure: 1017 mb"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/UVIndexTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UV Index: 9"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/SunriseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunrise: 06:26"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/SunsetTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunset: 17:51"
+            android:textSize="15sp"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/weather_desc"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/date_and_day"
+        app:layout_constraintRight_toLeftOf="@+id/desc_holder"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/icon_10n"
+        app:layout_constraintHorizontal_bias="0.6"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

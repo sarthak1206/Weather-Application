@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayoutTop"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/eight"
+        android:paddingEnd="@dimen/dp_eight"
+        android:paddingBottom="@dimen/eight"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_cities"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/two_by_ten"
+            android:layout_marginTop="@dimen/four"
+            android:id="@+id/textViewCount"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLocations"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/linearLayoutTop"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButtonAddLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp_sixteen"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_add"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        />
+
+    <LinearLayout
+        android:id="@+id/main_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayoutTop"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:layout_width="@dimen/one_eighty"
+            android:layout_height="@dimen/one_eighty"
+            android:layout_gravity="center"
+            android:padding="@dimen/twenty_four"
+            android:src="@drawable/ic_icon_no_found_img" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/nothing_to_display"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

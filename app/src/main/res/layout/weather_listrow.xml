@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/four"
+    android:background="@color/lightGrey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@color/header_color"
+        android:gravity="center"
+        android:padding="@dimen/six">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewWeekDay"
+            android:textColor="@android:color/white"
+            android:text="SUN" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="@dimen/sixteen"
+        android:id="@+id/imageViewWeather"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/four"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:id="@+id/textViewMaxMinWeather"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Partly Cloudy"
+        android:layout_marginTop="@dimen/four"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/textViewWeather"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

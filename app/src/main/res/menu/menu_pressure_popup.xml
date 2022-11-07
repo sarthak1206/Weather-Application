@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_hectopascals"
+        android:title="@string/hectopascals"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/item_mbar"
+        android:title="@string/mbar"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+</menu>
